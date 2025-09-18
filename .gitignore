@@ -1,0 +1,82 @@
+# -------------------------
+# SO / Arquivos de sistema
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Python / Cache & builds
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# -------------------------
+# Ambientes virtuais
+# -------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# -------------------------
+# Logs, testes e cobertura
+# -------------------------
+*.log
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# -------------------------
+# Jupyter / Notebooks
+# -------------------------
+.ipynb_checkpoints/
+.jupyter/
+
+# -------------------------
+# IDEs / Editores
+# -------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# -------------------------
+# Variáveis de ambiente
+# -------------------------
+.env
+.env.*
+!.env.example
+
+# -------------------------
+# Dados
+# Ignora CSVs por padrão,
+# mas permite amostras em data/samples
+# -------------------------
+*.csv
+data/raw/
+data/interim/
+data/processed/
+
+!data/samples/
+!data/samples/*.csv
+
+# -------------------------
+# Windows: Zone.Identifier (Mark of the Web)
+# Ignora o ADS e também arquivos soltos gerados por extrações
+# -------------------------
+**/*:Zone.Identifier
+**/Zone.Identifier
+
+# -------------------------
+# Outros
+# -------------------------
+*.tmp
