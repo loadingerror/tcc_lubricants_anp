@@ -81,3 +81,9 @@ data/processed/
 # Outros
 # -------------------------
 *.tmp
+
+# dados grandes
+*.parquet
+data/
+
+*.parquet
