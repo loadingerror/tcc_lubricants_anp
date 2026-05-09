@@ -1,0 +1,60 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  log_y   R-squared:                       0.521
+Model:                            OLS   Adj. R-squared:                  0.520
+Method:                 Least Squares   F-statistic:                     228.2
+Date:                Tue, 16 Dec 2025   Prob (F-statistic):               0.00
+Time:                        16:39:44   Log-Likelihood:                 19656.
+No. Observations:               31617   AIC:                        -3.924e+04
+Df Residuals:                   31582   BIC:                        -3.895e+04
+Df Model:                          34                                         
+Covariance Type:                  HAC                                         
+===================================================================================================================================
+                                                                      coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                           1.6528      0.010    167.209      0.000       1.633       1.672
+C(produto, Treatment(reference='DIESEL'))[T.DIESEL S10]             0.0121      0.006      1.908      0.056      -0.000       0.024
+C(produto, Treatment(reference='DIESEL'))[T.ETANOL]                -0.2253      0.006    -37.137      0.000      -0.237      -0.213
+C(produto, Treatment(reference='DIESEL'))[T.GASOLINA]               0.0248      0.005      4.832      0.000       0.015       0.035
+C(produto, Treatment(reference='DIESEL'))[T.GASOLINA ADITIVADA]     0.0493      0.005      9.727      0.000       0.039       0.059
+C(produto, Treatment(reference='DIESEL'))[T.GNV]                   -0.2383      0.007    -33.099      0.000      -0.252      -0.224
+C(uf, Treatment(reference='MG'))[T.AC]                              0.1378      0.011     12.573      0.000       0.116       0.159
+C(uf, Treatment(reference='MG'))[T.AL]                              0.0308      0.011      2.886      0.004       0.010       0.052
+C(uf, Treatment(reference='MG'))[T.AM]                              0.0285      0.011      2.613      0.009       0.007       0.050
+C(uf, Treatment(reference='MG'))[T.AP]                              0.0220      0.013      1.728      0.084      -0.003       0.047
+C(uf, Treatment(reference='MG'))[T.BA]                              0.0114      0.011      1.008      0.314      -0.011       0.034
+C(uf, Treatment(reference='MG'))[T.CE]                              0.0541      0.011      4.976      0.000       0.033       0.075
+C(uf, Treatment(reference='MG'))[T.DF]                              0.0198      0.013      1.487      0.137      -0.006       0.046
+C(uf, Treatment(reference='MG'))[T.ES]                              0.0158      0.011      1.391      0.164      -0.006       0.038
+C(uf, Treatment(reference='MG'))[T.GO]                             -0.0074      0.012     -0.615      0.539      -0.031       0.016
+C(uf, Treatment(reference='MG'))[T.MA]                              0.0143      0.012      1.216      0.224      -0.009       0.037
+C(uf, Treatment(reference='MG'))[T.MS]                             -0.0112      0.011     -0.981      0.327      -0.034       0.011
+C(uf, Treatment(reference='MG'))[T.MT]                             -0.0618      0.013     -4.599      0.000      -0.088      -0.035
+C(uf, Treatment(reference='MG'))[T.PA]                              0.0629      0.012      5.388      0.000       0.040       0.086
+C(uf, Treatment(reference='MG'))[T.PB]                             -0.0053      0.011     -0.484      0.629      -0.027       0.016
+C(uf, Treatment(reference='MG'))[T.PE]                             -0.0266      0.012     -2.310      0.021      -0.049      -0.004
+C(uf, Treatment(reference='MG'))[T.PI]                              0.0299      0.012      2.458      0.014       0.006       0.054
+C(uf, Treatment(reference='MG'))[T.PR]                              0.0038      0.012      0.311      0.756      -0.020       0.028
+C(uf, Treatment(reference='MG'))[T.RJ]                              0.0228      0.012      1.951      0.051      -0.000       0.046
+C(uf, Treatment(reference='MG'))[T.RN]                              0.0554      0.011      5.170      0.000       0.034       0.076
+C(uf, Treatment(reference='MG'))[T.RO]                              0.0809      0.012      7.026      0.000       0.058       0.103
+C(uf, Treatment(reference='MG'))[T.RR]                              0.0697      0.012      5.891      0.000       0.046       0.093
+C(uf, Treatment(reference='MG'))[T.RS]                              0.0406      0.012      3.347      0.001       0.017       0.064
+C(uf, Treatment(reference='MG'))[T.SC]                              0.0293      0.012      2.485      0.013       0.006       0.052
+C(uf, Treatment(reference='MG'))[T.SE]                              0.0152      0.011      1.383      0.167      -0.006       0.037
+C(uf, Treatment(reference='MG'))[T.SP]                             -0.0353      0.012     -2.965      0.003      -0.059      -0.012
+C(uf, Treatment(reference='MG'))[T.TO]                              0.0324      0.012      2.793      0.005       0.010       0.055
+t_c                                                                 0.0001   5.17e-05      2.053      0.040    4.81e-06       0.000
+mes_cum_c                                                           0.0044      0.002      2.779      0.005       0.001       0.007
+D_pre                                                               0.1790      0.007     25.914      0.000       0.165       0.193
+==============================================================================
+Omnibus:                      147.609   Durbin-Watson:                   0.065
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              175.562
+Skew:                           0.105   Prob(JB):                     7.54e-39
+Kurtosis:                       3.299   Cond. No.                     1.13e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 4 lags and with small sample correction
+[2] The condition number is large, 1.13e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
